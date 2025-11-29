@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               <span className="text-yellow-400 block">Maiduguri</span>
             </h1>
             <p className="text-xl text-blue-100 max-w-lg">
-              Fast, reliable, and affordable transportation and parcel delivery services around Maiduguri, Borno State.
+              Fast, reliable, and affordable transportation services around Maiduguri, Borno State.
             </p>
           </div>
           <div className="relative">

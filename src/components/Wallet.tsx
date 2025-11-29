@@ -27,7 +27,7 @@ const Wallet: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Your E-star Wallet</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Top up your wallet for seamless rides and parcel deliveries. Pay with card or bank transfer.
+            Top up your wallet for seamless rides. Pay with card or bank transfer.
           </p>
         </div>
 

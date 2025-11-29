@@ -1,24 +1,34 @@
-import React from 'react';
-import Header from './Header';
-import Hero from './Hero';
-import RideOptions from './RideOptions';
-import Wallet from './Wallet';
-import ParcelService from './ParcelService';
-import Features from './Features';
-import Footer from './Footer';
+import React, { useState } from 'react';
+import BottomNav from './BottomNav';
+import HomePage from '@/pages/HomePage';
+import RidePage from '@/pages/RidePage';
+import CardsPage from '@/pages/CardsPage';
+import ProfilePage from '@/pages/ProfilePage';
 
 const AppLayout: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'home' | 'ride' | 'cards' | 'profile'>('home');
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case 'home':
+        return <HomePage />;
+      case 'ride':
+        return <RidePage />;
+      case 'cards':
+        return <CardsPage />;
+      case 'profile':
+        return <ProfilePage />;
+      default:
+        return <HomePage />;
+    }
+  };
+
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <RideOptions />
-        <Wallet />
-        <ParcelService />
-        <Features />
+    <div className="min-h-screen bg-gray-50">
+      <main className="pb-16">
+        {renderContent()}
       </main>
-      <Footer />
+      <BottomNav activeTab={activeTab} onTabChange={setActiveTab} />
     </div>
   );
 };

@@ -36,9 +36,6 @@ const Header: React.FC = () => {
               Wallet
             </a>
             <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Parcels
-            </a>
-            <a href="#" className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
               Contact
             </a>
           </nav>
@@ -74,9 +71,6 @@ const Header: React.FC = () => {
               </a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Wallet
-              </a>
-              <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
-                Parcels
               </a>
               <a href="#" className="text-gray-700 hover:text-blue-600 font-medium">
                 Contact
